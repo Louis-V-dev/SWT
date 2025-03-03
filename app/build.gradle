@@ -1,0 +1,49 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.swtandroidtest'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.swtandroidtest"
+        minSdk 28
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    // Core Android Libraries
+    implementation("androidx.appcompat:appcompat:1.6.1") // Or use version catalog alias
+    implementation("com.google.android.material:material:1.9.0") // Or use version catalog alias
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4") // Or use version catalog alias
+
+    // JUnit 4 for Unit Testing
+    testImplementation("junit:junit:4.13.2") // Or use version catalog alias
+
+    // Mockito for Unit Testing
+    testImplementation("org.mockito:mockito-core:3.12.4") // Or use version catalog alias
+    testImplementation("org.mockito:mockito-inline:3.12.4") // Or use version catalog alias
+
+    // AndroidX Test for Instrumented Testing
+    androidTestImplementation("androidx.test.ext:junit:1.1.5") // Or use version catalog alias
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1") // Or use version catalog alias
+    androidTestImplementation("androidx.test:core:1.5.0") // Or use version catalog alias
+
+}

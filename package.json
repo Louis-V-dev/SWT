@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@wdio/appium-service": "^7.40.0",
+    "appium": "^2.16.2",
+    "appium-uiautomator2-driver": "^4.1.0",
+    "codeceptjs": "^3.7.2",
+    "webdriverio": "^9.10.1"
+  }
+}

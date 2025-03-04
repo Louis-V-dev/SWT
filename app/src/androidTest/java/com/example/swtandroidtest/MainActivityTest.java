@@ -103,4 +103,21 @@ public class MainActivityTest {
         // Check if the result is 0
         onView(withId(R.id.resultTextView)).check(matches(withText("0")));
     }
+    @Test
+    public void testDivisionv2() {
+        // Click 8
+        onView(withId(R.id.button8)).perform(click());
+
+        // Click /
+        onView(withId(R.id.buttonDivide)).perform(click());
+
+        // Click 2
+        onView(withId(R.id.button2)).perform(click());
+
+        // Click =
+        onView(withId(R.id.buttonEquals)).perform(click());
+
+        // Check if the result is 4
+        onView(withId(R.id.resultTextView)).check(matches(withText("5.0")));
+    }
 }

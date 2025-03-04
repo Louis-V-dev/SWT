@@ -1,0 +1,12 @@
+2025-03-04 16:46:03:625 [Appium] Welcome to Appium v2.16.2 (REV d9f4c1763f2ba33c9429b10da29b8b74ec838f1a)
+2025-03-04 16:46:03:628 [Appium] The autodetected Appium home path: D:\SWT301\SWTANDROIDTEST
+2025-03-04 16:46:03:629 [Appium] Attempting to load driver uiautomator2...
+2025-03-04 16:46:03:641 [Appium] Requiring driver at D:\SWT301\SWTANDROIDTEST\node_modules\appium-uiautomator2-driver\build\index.js
+2025-03-04 16:46:05:652 [Appium] AndroidUiautomator2Driver has been successfully loaded in 2.022s
+2025-03-04 16:46:05:682 [Appium] Appium REST http interface listener started on http://0.0.0.0:4723
+2025-03-04 16:46:05:688 [Appium] You can provide the following URLs in your client code to connect to this server:
+	http://192.168.1.7:4723/
+	http://127.0.0.1:4723/ (only accessible from the same host)
+2025-03-04 16:46:05:689 [Appium] Available drivers:
+2025-03-04 16:46:05:690 [Appium]   - uiautomator2@4.1.0 (automationName 'UiAutomator2')
+2025-03-04 16:46:05:691 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
